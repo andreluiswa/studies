@@ -1,0 +1,98 @@
+<?php
+// dia 28 de novembro de 2025, fiz uma prova na faculdade da matéria de POO
+abstract class UsuarioSuplementos {
+    protected $nome;
+    protected $tipo;
+    protected $xp;
+
+    public function __construct($nome, $tipo) {
+        $this->nome = $nome;
+        $this->tipo = $tipo;
+        $this->xp   = 0;
+    }
+
+    protected function adicionarXp($qtd) {
+        $this->xp += $qtd;
+    }
+
+    abstract public function registrarAcao($acao, $quantidadeXP);
+
+    abstract public function exibirStatus();
+}
+
+interface AcoesLoja {
+    public function acaoPrincipal($item);
+    public function acaoSecundaria($item);
+}
+
+class Cliente extends UsuarioSuplementos implements AcoesLoja {
+
+    public function __construct($nome) {
+        parent::__construct($nome, "Cliente");
+    }
+
+    public function acaoPrincipal($produto) {
+        echo "{$this->nome} comprou o suplemento: {$produto}\n";
+        $this->registrarAcao("Compra", 20);
+    }
+
+    public function acaoSecundaria($produto) {
+        echo "{$this->nome} avaliou o produto: {$produto}\n";
+        $this->registrarAcao("Avaliação", 10);
+    }
+
+    public function registrarAcao($acao, $quantidadeXP) {
+        $this->adicionarXp($quantidadeXP);
+    }
+
+    public function exibirStatus() {
+        echo "Nome: {$this->nome}\n";
+        echo "Tipo: {$this->tipo}\n";
+        echo "XP Total: {$this->xp}\n";
+        echo "\n";
+    }
+}
+
+class Vendedor extends UsuarioSuplementos implements AcoesLoja {
+
+    public function __construct($nome) {
+        parent::__construct($nome, "Vendedor");
+    }
+
+    public function acaoPrincipal($produto) {
+        echo "{$this->nome} cadastrou o suplemento: {$produto}\n";
+        $this->registrarAcao("Cadastro", 30);
+    }
+
+    public function acaoSecundaria($duvida) {
+        echo "{$this->nome} respondeu dúvida: {$duvida}\n";
+        $this->registrarAcao("Resposta", 15);
+    }
+
+    public function registrarAcao($acao, $quantidadeXP) {
+        $this->adicionarXp($quantidadeXP);
+    }
+
+    public function exibirStatus() {
+        echo "Nome: {$this->nome}\n";
+        echo "Tipo: {$this->tipo}\n";
+        echo "XP Total: {$this->xp}\n";
+        echo "\n";
+    }
+}
+
+$cliente1  = new Cliente("André");
+$vendedor1 = new Vendedor("Evandro");
+
+$cliente1->acaoPrincipal("Whey Protein de Chocolate");
+$cliente1->acaoSecundaria("Creatina");
+echo "\n";
+
+$vendedor1->acaoPrincipal("Masterol");
+$vendedor1->acaoSecundaria("Cliente perguntou sobre pré-treino");
+echo "\n";
+
+echo "Resultado Geral:\n";
+echo "\n";
+$cliente1->exibirStatus();
+$vendedor1->exibirStatus();
