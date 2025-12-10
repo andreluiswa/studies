@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+/*Cabeçalho*/
+
+#cabecalho{
+    background-color: rgb(65,105,225);
+    min-height: 230px;
+    margin-bottom: 20px;
+}
+
+#cabecalho div{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#cabecalho .logo{
+    width: 140px;
+    height: 110px;
+    padding-top: 20px;
+}
+
+#cabecalho ul {
+    list-style: none;
+    float: left;
+    margin-top: 30px;
+    background-color: white;
+}
+
+#cabecalho ul>li{
+    float: left;
+}
+
+#cabecalho ul>li a{
+    line-height: 3.5em;
+    color: rgb(65,105,225);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+#cabecalho ul>li a:hover, #cabecalho ul>li:hover{
+    color: white;
+    background-color: rgb(65,105,225);
+}
+
+/*Início do body/main*/
+
+div.container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#main .col-lateral{
+    float: left;
+    width: 180px;
+    margin: 0 10px 10px 0;
+}
+
+#main .col-lateral h2{
+    color: white;
+    background-color: rgb(65,105,225);
+    padding: 10px;
+}
+
+#main .col-lateral .caixa{
+    min-height: 500px;
+    margin-bottom: 50px;
+}
+
+#main .col-lateral .link-lateral li{
+    margin-top: 30px;
+}
+
+#main .col-lateral .link-lateral li>a{
+    text-decoration: none;
+    color: rgb(65,105,225);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#main .link-lateral {
+    list-style: none;
+}
+
+/* Coluna Lateral Aplicativo e Temas*/
+
+#main .col-aplicativo, #main .col-tema{
+    float: left;
+    margin: 0px 10px 10px 0px;
+    width: 270px;
+}
+
+#main .col-aplicativo h2{
+    color: white;
+    background-color: rgb(65, 105, 225);
+    padding: 10px;
+}
+
+#main .col-aplicativo img{
+    max-width: 270px;
+    width: 100%;
+}
+
+#main .col-aplicativo h3{
+    color: rgb(65, 105, 225);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main .col-aplicativo p{
+    color: rgb(65, 105, 225);
+}
+
+#main .col-aplicativo p a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+/* Coluna de Tema */
+
+#main .col-tema h2{
+    color: white;
+    background-color: rgb(65, 105, 225);
+    padding: 10px;
+}
+
+#main .col-tema .tema{
+    margin-top: 10px;
+}
+
+#main .col-tema img{
+    max-width: 270px;
+    width: 100%;
+}
+
+#main .col-tema h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(65, 105, 225);
+}
+
+#main .col-tema .tema p{
+    margin-bottom: 10px;
+    color: rgb(65, 105, 225);
+}
+
+#main .col-tema .tema p a{
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Rodape */
+
+#rodape{
+    background-color: rgb(65, 105, 225);
+    height: 200px;
+    clear: both;
+}
+
+#rodape .detalhes{ 
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+#rodape .detalhes p{
+    padding: 10px;
+}
