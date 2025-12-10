@@ -2,7 +2,7 @@
 
 Meu nome é André Luís (andreluiswa). Sou estudante de Análise e Desenvolvimento de Sistemas na UNIMAR, atualmente no terceiro termo.  
 Utilizo este perfil para registrar minha evolução na área de tecnologia, incluindo estudos acadêmicos, projetos práticos e experiências profissionais.
-A grande maioria, se não todos, os projetos / atividades que foram realizados na faculdade ()
+A grande maioria, se não todos, os projetos / atividades que foram realizados na faculdade: `studies/facudade/`
 
 ---
 
