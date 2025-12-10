@@ -1,6 +1,6 @@
 # Projeto Website – Atividade 6
 
-Este é um breve guia sobre um projeto web que fiz no 2° termo da faculdade: ele consistia em criar um site web sobre algum jogo, o objetivo foi voltado para a criatividade dos alunos.
+Este é um breve guia sobre um projeto web que fiz no 2° termo da faculdade: ele consistia em criar um site web sobre algum jogo, como se fosse a empresa de tal, o objetivo foi voltado para a criatividade dos alunos.
 
 ---
 
