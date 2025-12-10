@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+/*Cabeçalho*/
+
+#cabecalho{
+    background-color: #1e4264;
+    min-height: 230px;
+    margin-bottom: 20px;
+}
+
+#cabecalho div{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#cabecalho .logo{
+    width: 140px;
+    height: 110px;
+    padding-top: 20px;
+}
+
+#cabecalho ul {
+    list-style: none;
+    float: left;
+    margin-top: 30px;
+    background-color: white;
+}
+
+#cabecalho ul>li{
+    float: left;
+}
+
+#cabecalho ul>li a{
+    line-height: 3.5em;
+    color: #1e4264;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+#cabecalho ul>li a:hover, #cabecalho ul>li:hover{
+    color: white;
+    background-color: #1e4264;
+}
+
+/*Início do body/main*/
+
+div.container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#main .col-lateral{
+    float: left;
+    width: 180px;
+    margin: 0 10px 10px 0;
+}
+
+#main .col-lateral h2{
+    color: white;
+    background-color: #1e4264;
+    padding: 10px;
+}
+
+#main .col-lateral .caixa{
+    min-height: 500px;
+    margin-bottom: 50px;
+}
+
+#main .col-lateral .link-lateral li{
+    margin-top: 30px;
+}
+
+#main .col-lateral .link-lateral li>a{
+    text-decoration: none;
+    color: #13293e;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#main .link-lateral {
+    list-style: none;
+}
+
+/* Coluna Lateral Esporte e Economia*/
+
+#main .coluna-esp, #main .col-politica{
+    float: left;
+    margin: 0px 10px 10px 0px;
+    width: 270px;
+}
+
+#main .coluna-esp h2{
+    color: white;
+    background-color: #1e4264;
+    padding: 10px;
+}
+
+#main .coluna-esp img{
+    max-width: 270px;
+    width: 100%; 
+}
+
+#main .coluna-esp h3{
+    color: #13293e;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main .coluna-esp p{
+    color: #13293e;
+}
+
+#main .coluna-esp p a{
+    color: #0077cc;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#main .coluna-esp p a:hover{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Coluna de Política e Tecnologia */
+
+#main .col-politica h2{
+    color: white;
+    background-color: #1e4264;
+    padding: 10px;
+}
+
+#main .col-politica .politica{
+    margin-top: 10px;
+}
+
+#main .col-politica img{
+    max-width: 270px;
+    width: 100%;
+}
+
+#main .col-politica h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #13293e;
+}
+
+#main .col-politica .politica p{
+    margin-bottom: 10px;
+    color: #13293e;
+}
+
+#main .col-politica .politica p a{
+    color: #0077cc;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#main .col-politica .politica p a:hover{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Rodape */
+
+#rodape{
+    background-color: #1e4264;
+    height: 200px;
+    clear: both;
+}
+
+#rodape .detalhes{ 
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+
+#rodape .detalhes p{
+    padding: 10px;
+}
