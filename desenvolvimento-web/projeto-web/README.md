@@ -39,10 +39,6 @@ Este é um breve guia sobre um projeto web que fiz no 2° termo da faculdade: el
 ## Estrutura de Arquivos
 
 O projeto está organizado da seguinte forma:
-![alt text](estrutura_arquivos.png)
-
-Ou você pode organizar dessa forma:
-
 ```text
 Projeto-Website/
 ├── home.html
