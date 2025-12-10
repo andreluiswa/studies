@@ -72,3 +72,49 @@ if damage < 0:
   damage - hp2
 elif hp2 == 0:
   print("Player 1 Venceu!")
+
+# Em um jogo multiplayer, os jogadores podem receber recompensas diárias ao fazer login.
+# As regras são:
+# - Se o jogador faz login todos os dias consecutivos, recebe +50 moedas.
+# - Se o jogador não fez login no dia anterior, recebe +10 moedas apenas.
+# - Se é o sétimo dia seguido de login, recebe um bônus extra de 100 moedas.
+# Crie um algoritmo que receba como entrada se o jogador fez login ontem (True ou False) e
+# quantos dias seguidos ele já logou. O programa deve calcular e exibir a recompensa
+# recebida.
+
+def calcular_recompensa(login_ontem, dias_seguidos):
+  """Calcula a recompensa diária de um jogador.
+
+  Args:
+    login_ontem: True se o jogador fez login ontem, False caso contrário.
+    dias_seguidos: Número de dias consecutivos de login.
+
+  Returns:
+    A recompensa em moedas.
+  """
+
+  if login_ontem:
+    recompensa = 50
+    if dias_seguidos == 6:
+      recompensa += 100
+  else:
+    recompensa = 10
+
+  return recompensa
+
+# Exemplo de uso
+login_ontem = True
+dias_seguidos = 5
+recompensa = calcular_recompensa(login_ontem, dias_seguidos)
+print(f"A recompensa do jogador é: {recompensa} moedas")
+
+login_ontem = False
+dias_seguidos = 1
+recompensa = calcular_recompensa(login_ontem, dias_seguidos)
+print(f"A recompensa do jogador é: {recompensa} moedas")
+
+login_ontem = True
+dias_seguidos = 6
+recompensa = calcular_recompensa(login_ontem, dias_seguidos)
+print(f"A recompensa do jogador é: {recompensa} moedas")
+
