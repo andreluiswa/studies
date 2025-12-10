@@ -87,5 +87,6 @@ $caio = new Aluno();
 $raul = new Aluno();
 $evandro = new Aluno();
 Aluno::exbibe_total_cadastrado();
-?>
+
 echo "1 km é equvalente a " . Conversor::converter_km_milhas(1);
+?>
