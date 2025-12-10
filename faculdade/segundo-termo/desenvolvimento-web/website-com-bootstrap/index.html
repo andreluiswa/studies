@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!--Font Awesomes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Projeto Games</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-purple navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="">
+                <img class="logo" src="img/logos/kratos3.png">
+              </a>
+
+              <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavbarGame" aria-controls="NavbarGame" aria-expended="false">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="NavbarGame">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Home
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        XBOX
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Playstation
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Exclusivo
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Produtos
+                      </a>
+                  </li>
+                  <!--Aciona função exibirCarrinho dentro de js/script.js-->
+                  <li class="nav-item text-white" id="carrinho" onclick="exibirCarrinho()">
+                      <i class="fa-solid fa-cart-shopping p-3"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="bg-purple">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12 d-flex">
+                      <div>
+                        <h1 class="display-4 text-white">
+                          Seja você também KratosGamer
+                        </h1>
+                        <p class="text-white">
+                          Todos os membros do Kratos Gamer concorrem a um PS5 Pro com 3 jogos exclusivos
+                          de sua escolha.
+                        </p>
+                        <form action="cadastra.php" method="post">
+                          <div class="input-group">
+                            <input type="text" placeholder="Digite seu email" class="form-control" name="email">
+                            <button class="btn btn-outline-light" type="submit">Cadastre-se</button>
+                          </div>
+                        </form>
+                        <p class="mt-4 text-white">
+                          Disponível em
+                        </p>
+                        <div class="d-flex pb-3">
+                            <a href="" class="btn btn-outline-light ms-1 me-1">
+                                <i class="fa-brands fa-steam"></i>
+                            </a> 
+                            <a href="" class="btn btn-outline-light ms-1 me-1">
+                                <i class="fa-brands fa-playstation"></i>
+                            </a> 
+                             <a href="" class="btn btn-outline-light ms-1 me-1">
+                                <i class="fa-brands fa-xbox"></i>
+                            </a> 
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 d-none d-md-block">
+                      <img class="img" src="img/capa/kratos2.png">
+                  </div>
+                </div>
+            </div>
+        </section> 
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 d-flex">
+                    <div class="align-self-center">
+                        <h1>Desfrute seus jogos na velocidade da luz</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis similique quasi nesciunt quos suscipit assumenda exercitationem quisquam quis, repellendus veniam rem non consectetur? Optio officiis explicabo sed maiores suscipit.
+                        </p>
+                        <button class="btn bg-purple mb-5 text-white">
+                          Saiba mais
+                        </button>
+                      </div>
+                </div>
+                <!--Aciona função adicionar Carrinho-->
+                <div class="col-md-12 col-lg-6" onclick="adicionarCarrinho()">
+                  <img src="img/ps5pro.jpg" class="img-fluid">
+                </div>
+            </div>
+        </section> 
+        <section class="pt-5 pb-5 mt-5 mb-5">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-lg-6">
+                    <img src="img/pcgamer.png" class="img-fluid">
+                  </div>
+                  <div class="col-md-12 col-lg-6 d-flex">
+                    <div class="align-self-center">
+                      <h1>Monte sua máquina e seja Kratos você também</h1>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat mollitia deleniti quia distinctio eius, ratione atque, praesentium ab odio sequi nulla odit accusamus dolorum, ullam aliquid dolore incidunt. Consectetur, velit?
+                      </p>
+                      <button class="btn bg-purple text-white">Saiba mais</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-5 bg-purple">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 p-4 col-sm-12">
+                  <ul class="d-flex flex-sm-column flex-lg-row">
+                    <li class="fw-bold">
+                      <a href="" class="text-white">Home</a>
+                    </li>
+                    <li class="fw-bold">
+                      <a href="" class="text-white">Blog</a>
+                    </li>
+                    <li class="fw-bold">
+                      <a href="" class="text-white">Loja Virtual</a>
+                    </li>
+                    <li class="fw-bold">
+                      <a href="" class="text-white">Nossa história</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 p-4 col-sm-12">
+                    <a href="" class="btn btn-outline-light">
+                      <i class="fab fa-facebook text-white"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-light">
+                      <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-light">
+                      <i class="fab fa-youtube text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="customAlert" style="display: none; position: fixed; top:50%; left: 40%; z-index: 1000;" class="alert bg-purple p-3">
+          <p id="alertMessage" class="fw-bold text-white"></p>
+          <!--É acionado somento ao ser clickado-->
+          <button onclick="hideAlert()" class="btn btn-light text-purple w-100">Fechar</button>
+        </div>
+    </footer>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
