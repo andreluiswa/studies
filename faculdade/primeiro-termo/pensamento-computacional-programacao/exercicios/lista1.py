@@ -46,7 +46,6 @@ print(f"Valor da tinta para pintar uma área de {Área} m²: {ValorTinta}")
 
 # Exercicio 7 (esse eu tava inspirado)
 # Cálculo Simples - beecrowd
-
 cod_1,num_1,val_1 = input().split(" ") # Comando "split" serve para "quebrar" a string, assim podendo colocar muitas variaveis em uma única linha de código
 cod_2,num_2,val_2 = input().split(" ")
 
