@@ -1,0 +1,119 @@
+body{
+    font: 16px Arial;
+    background-color: #2f9bd9;
+}
+
+body {
+    background-image: url(background_image.jpg), url(background_image2.jpg), url(background_image2.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain, contain, contain;
+    background-position: center, top, bottom;
+}
+
+#principal{
+    width: 900px;
+    margin: 0 auto;
+}
+
+#principal #cabecalho img{
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #004890;
+    padding: 3px;
+}
+
+.menu a{
+    display:inline-block;
+    text-decoration:none;
+    color: #1C1F2A;
+    background-color: #2F6DB5;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 5px;
+    font-weight: 750;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #FFFFFF;
+    background-color: #004890;
+}
+
+#conteudo{
+    background-color: #E8F0FA;
+    padding: 10px;
+    border-radius: 10px;
+    color: #1A2235;
+}
+
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#principal #conteudo img{
+    background-color: #1A9DD7;
+    padding: 5px;
+    width: 870px;
+    border-radius: 10px;
+}
+
+.info p{
+    font-size: small;
+}
+
+.info .email{
+    color: #0077cc;
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.2s;
+}
+
+.info .email:hover{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+#lancamento{
+    text-align: center;
+    background-color: #1A9DD7;
+    border-radius: 20px;
+}
+
+#trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameplay {
+    text-align: center;
+    background-color: #1A9DD7;
+    border-radius: 20px;
+}
+
+#trailer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dlc {
+    text-align: center;
+    background-color: #1A9DD7;
+    border-radius: 20px;
+}
+
+#trailer3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rodape{
+    text-align: center;
+    background-color:#D62839;
+    border-radius: 20px;
+}
