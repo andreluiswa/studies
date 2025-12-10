@@ -28,10 +28,8 @@ Este é um breve guia sobre um projeto web que fiz no 2° termo da faculdade: el
  
 ---
 
-**Autor:** André Luís Gomes dos Santos Filho 
+**Autor:** André Luis Gomes dos Santos Filho 
  
-**RA:** 2024507
-
 **Projeto acadêmico – Unimar (Análise e Desenvolvimento de Sistemas)**
 
 ---
