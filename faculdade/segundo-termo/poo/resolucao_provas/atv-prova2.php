@@ -4,7 +4,7 @@
 
 //André Luís Gomes dos Santos Filho
 
-//Análise e Desenvolvimento de Sistemas - UNIMAR (2B)
+//Análise e Desenvolvimento de Sistemas - UNIMAR (2A)
 
 // Tentei deixar bem estruturado e com comentários especificando a resolução do que foi pedido na atividade
 
