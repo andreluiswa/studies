@@ -59,10 +59,10 @@ Desenvolvimento de um sistema completo simulando um fluxo real de autoatendiment
 ## Termo 3 — Consolidação e Avanço Técnico
 Atualmente, no terceiro termo de ADS na UNIMAR, aprofundando conhecimentos em:
 
-- Cloud Computing e DevOps  
-- Estrutura de Dados  
-- Plataforma de Desenvolvimento de Software  
-- Tecnologias de Frontend  
+- **Cloud Computing e DevOps:** Integração, desenvolvimento e aprendizado 
+- **Estrutura de Dados:** Python (Avançado)   
+- **Plataforma de Desenvolvimento de Software:** Visual Studio e C#
+- **Tecnologias de Frontend:** HTML, CSS e JS (Avançados) 
 
 ---
 
